@@ -1,0 +1,33 @@
+.header {
+    background:#666;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.header h2{
+    font-weight:bold;
+    padding: 0 10px;
+}
+
+.logo, .searchBar{
+    display:flex;
+    align-items: center;
+}
+
+.searchBar{
+    max-width: 800px;
+    width:80%;
+}
+.searchBar input {
+    width: 100%;
+    padding:6px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+}
+.searchBar button {
+    padding: 10px;
+}
+.searchBar button img{
+    width:30px;
+}
