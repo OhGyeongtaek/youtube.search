@@ -1,6 +1,5 @@
 import Layout from '../layout/layout';
 import VedioList from "../components/list/videoList";
-import { VideoStore } from '../modules/videoStore';
 
 const MovieList = () => {
     return (
@@ -10,7 +9,4 @@ const MovieList = () => {
     );
 };
 
-MovieList.propTypes = {
-    
-};
 export default MovieList;
