@@ -1,16 +1,20 @@
-import Vedio from "../../models/video";
+import { useDispatch, useSelector } from "react-redux";
+import Video from "../../models/video";
 import VedioItem from '../items/vedioItem';
+import { RootState } from '../../modules/videoStore';
 
-const VideoList = (props: Props) => {
+const VideoList = ({videos} : VideoListProps) => {
+    const a = useSelector((state: RootState) => state.video.videos);
+
     return (
         <ul>
-            { props.videos.map((video) => <VedioItem vedio={video}/>) }
+            { a?.map((video) => <VedioItem vedio={video}/>) }
         </ul>
     );
 }
 
-interface Props {
-    videos: Vedio[]
+interface VideoListProps {
+    videos?: Video[]
 }
 
 export default VideoList;
